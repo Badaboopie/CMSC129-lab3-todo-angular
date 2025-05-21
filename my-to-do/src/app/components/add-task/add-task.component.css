@@ -1,0 +1,45 @@
+input{
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 5px;
+    width:40%;
+    margin-block: 8px;
+}
+
+.reminderoption{
+    width: 1%;
+}
+
+.btn{
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    padding-inline: 16px;
+    padding-block: 4px;
+    margin-inline: 10px;
+    background-color: #FCA311;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #E5E5E5;
+    color: #000;
+}
+
+.form-control{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:2px 8px;
+}
+
+.form-control label{
+    display: grid;
+    font-weight: bold;
+    color: #14213D;
+}
+
+.form-control select{
+    width: 10%;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 5px;
+}

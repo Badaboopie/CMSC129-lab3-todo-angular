@@ -1,0 +1,13 @@
+<app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task" 
+    (onDeleteTask)="deleteTask(task)"
+    (onToggleReminder)="toggleReminder(task)"
+    (onCompleteToggleTask)="toggleComplete($event)"
+
+    [isEditing]="editingTaskId === task.id"
+    (onEditTask)="startEditTask(task)"
+    (onEditCancelTask)="stopEditTask()"
+    (onEditTaskEvent)="updateTask($event)"
+    >
+</app-task-item>

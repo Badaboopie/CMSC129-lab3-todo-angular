@@ -1,0 +1,78 @@
+
+.task{
+    display: grid;
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task:hover{
+    background-color: #E5E5E5;
+}
+
+.task h3{
+    display: flex;
+    font-size: medium;
+    align-items: center;
+}
+
+.task-buttons{
+    position: absolute;
+    right: 15%;
+}
+
+button{
+    border-radius: 8px;
+    border: none;
+    padding-inline: 16px;
+    padding-block: 4px;
+    margin-inline: 20px 5px;
+    background-color: #FCA311;
+    color: white;
+}
+
+.deletebtn{
+    background-color: red;
+}
+
+button:hover{
+    background-color: #14213D;
+    color: whitesmoke;
+}
+
+.task.reminder{
+    border-left: 10px solid #14213D;
+}
+
+.priority-low {
+  background-color: #e0f7e9; /* light green */
+}
+.priority-medium {
+  background-color: #fffbe0; /* light yellow */
+}
+.priority-high {
+  background-color: #ffe0e0; /* light red */
+}
+
+.task-completed{
+    background-color: #34559b;
+    color: white
+}
+
+.task-completed h3{
+    color: #E5E5E5;
+}
+
+.task-completed:hover{
+    background-color: #9eb2dc;
+    color: white
+}
+
+.task-checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

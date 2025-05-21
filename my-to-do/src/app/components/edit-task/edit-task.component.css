@@ -1,0 +1,55 @@
+input{
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 5px;
+    width:40%;
+}
+
+.reminderoption{
+    width: 1%;
+}
+
+.btn{
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    padding-inline: 16px;
+    padding-block: 4px;
+    align-self: center;
+    margin-top: 20px;
+    background-color: #FCA311;
+    color: white;
+    margin-inline: 10px;
+}
+
+.btn:hover{
+    background-color: #E5E5E5;
+    color: #000;
+}
+
+.form-control{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:2px 8px;
+}
+
+.form-control:hover{
+    color: white;
+}
+
+.form-control label{
+    display: grid;
+    font-weight: bold;
+    color: #14213D;
+    padding: 8px 4px;
+}
+
+.form-control select{
+    width: 30%;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 5px;
+}
+
+.task-completed{
+    color: white
+}

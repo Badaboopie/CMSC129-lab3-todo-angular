@@ -1,0 +1,41 @@
+<form *ngIf="isEditing" (ngSubmit)="onEdit()">
+    <div class="form-control"
+    [ngClass]="{
+        'task-completed' : task.completed
+    }"
+    >
+        <label for="name">Task</label>
+        <br>
+        <input 
+        type="text"
+        name="name" 
+        [(ngModel)]="name" 
+        id="name" placeholder="Enter your Task" />
+    </div>
+    <div class="form-control">
+        <label for="date">Date</label>
+        <br>
+        <input type="date" 
+        name="day"  
+        [(ngModel)]="day"  
+        id="day" />
+    </div>
+    <div class="form-control">
+        <label for="time">Time</label>
+        <input type="time" 
+        name="time" 
+        [(ngModel)]="time" 
+        id="time" />
+    </div>
+
+    <div class="form-control">
+        <label for="priority">Set Priority</label>
+        <select name="priority" id="priority" [(ngModel)]="priority">
+            <option [value]="1">Low</option>
+            <option [value]="2">Medium</option>
+            <option [value]="3">High</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Submit" class="btn">
+</form>

@@ -1,0 +1,35 @@
+
+<div [ngClass]="{
+    reminder: task.reminder,
+    'task-completed' : task.completed,
+    'priority-low': task.priority == 1,
+    'priority-medium': task.priority == 2,
+    'priority-high': task.priority == 3
+    }" 
+    class="task" 
+    (dblclick)="onToggle(task)">
+    <h3>
+        <input type="checkbox"
+        class="task-checkbox"
+        [checked]="task.completed"
+        (change)="onCompleteToggle(task, $event)"
+        >
+        <span class="checkmark"></span>
+        {{task.name}}
+        <div class="task-buttons">
+            <app-button
+            color="{{ isEditing ? '#14213D' : '#FCA311'}}"
+            text="{{ isEditing ? 'Close' : 'Edit' }}"
+            (btnClick)="isEditing ? onCancelEdit() : onEdit(task)"
+            ></app-button>
+            <button class="deletebtn" (click)="onDelete(task)">Delete</button>
+        </div>
+    </h3>
+    <p>{{ convertDate(task.day) }} at {{ formatTime(task.time) }}</p>
+    <app-edit-task *ngIf="isEditing" 
+    [isEditing]="isEditing"
+    [task]="task"
+    (onEditTask)="EditTaskEvent($event)"
+    ></app-edit-task>
+</div>
+    

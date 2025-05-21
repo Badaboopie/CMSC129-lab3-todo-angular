@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8px;
+    background-color: #14213D;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Eurostile, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
